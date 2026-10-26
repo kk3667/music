@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<title>My Music Album</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="album">
+  <header class="topbar">
+    <div class="title">MY ALBUM</div>
+    <div class="counter"><span id="current">1</span> / 6</div>
+  </header>
+
+  <main class="viewer" id="viewer">
+    <button class="nav prev" id="prev" aria-label="Previous">‹</button>
+    <div class="slide">
+      <img id="albumImage" src="images/1.png" alt="Album image 1">
+    </div>
+    <button class="nav next" id="next" aria-label="Next">›</button>
+  </main>
+
+  <div class="hint">SWIPE TO NAVIGATE · CLICK TO ZOOM · PINCH TO RESIZE</div>
+  <div class="dots" id="dots"></div>
+
+  <div class="lightbox" id="lightbox">
+    <button class="close" id="close" aria-label="Close">×</button>
+    <img id="zoomImage" src="" alt="Zoomed album image">
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
